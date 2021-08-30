@@ -1,0 +1,55 @@
+input[type="number"] {
+	width: 5em;
+	margin-right: 2em;
+	padding: 0.2em;
+	border: 1px solid lightgray;
+}
+
+input[type="range"] {
+	vertical-align: middle;
+}
+
+button {
+	padding: 0.4em;
+	border: 1px solid lightgray;
+}
+button:hover {
+	box-shadow: 2px 2px 4px lightgray;
+}
+
+#viewControls {
+	position: fixed;
+	border: 1px solid gray;
+	margin: 0;
+	padding: 1em;
+	box-sizing: border-box;
+	box-shadow: 4px 4px 8px lightgray;
+}
+#timeline {
+	margin-top: 70px;
+}
+
+#fileInput {
+	display: none;
+}
+#buttonAdd {
+	background: lightgreen;
+}
+#buttonRemove {
+	background: red;
+	color: white;
+}
+#buttonImport {
+	background: cyan;
+}
+#buttonExport {
+	background: orange;
+}
+
+.spacer1 {
+	display: inline;
+	width: 1px !important;
+	height: 1px !important;
+	margin: 0;
+	margin-left: 100px;
+}

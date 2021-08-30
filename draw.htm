@@ -1,0 +1,33 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>Adjustable Timeline Tool</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="mxamber, https://github.com/mxamber">
+	<meta name="title" content="TimelineTool">
+	<meta name="description" content="Simple timeline creator implemented in HTML & JavaScript.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="draw.js"></script>
+	<link rel="stylesheet" href="draw.css">
+</head>
+	<body>
+
+	<p id="viewControls">
+		Start year: <input type="number" onchange="timeline.offset = this.valueAsNumber; draw();" value=2000 step=1 id="startYear" />
+		End year: <input type="number" onchange="timeline.end = this.valueAsNumber; draw();" value=2020 step=1 id="endYear" />
+		Zoom factor: <input type="range" oninput="draw();" min=0.1 max=5 value=1 id="zoomFactor" step=0.05 />&nbsp;<span id="zoomLabel"></span>
+		<span class="spacer1"/>
+		<button onclick="newEvent()" id="buttonAdd">&nbsp;+&nbsp;</button>
+		<input type="file" accept=".txt,.json,text/plain,application/json" id="fileInput"></input>
+		<button onclick="deleteEvent()" id="buttonRemove">&nbsp;X&nbsp;</button>
+		<button onclick="elem('fileInput').click();" id="buttonImport">Import JSON</button>
+		<button onclick="exportEvents()" id="buttonExport">Export JSON</button>
+	</p>
+
+	<canvas id="timeline" width=3000 height=500></canvas>
+
+	<script type="text/javascript">
+	init();
+	</script>
+</body>
+</html>
