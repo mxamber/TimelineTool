@@ -1,0 +1,62 @@
+{
+    "padding": {
+        "top": 100,
+        "right": 0,
+        "bottom": 50,
+        "left": 50
+    },
+    "zoom": 1.5,
+    "offset": 1994,
+    "end": 1999,
+    "events": [
+        {
+            "id": "writing_begin_ep1",
+            "date": "1994-11-01T00:00:00.000Z",
+            "title": "Lucas begins writing the prequel trilogy",
+            "description": "",
+            "color": "#990000"
+        },
+        {
+            "id": "art_dev_ep1",
+            "date": "1995-01-15T00:00:00.000Z",
+            "title": "art development begins",
+            "description": "",
+            "color": "#990000"
+        },
+        {
+            "id": "filming_begin_ep1",
+            "date": "1997-06-26T00:00:00.000Z",
+            "title": "principal photography begins",
+            "description": "",
+            "color": "#990000"
+        },
+        {
+            "id": "filming_end_ep1",
+            "date": "1997-09-30T00:00:00.000Z",
+            "title": "principal photography ends",
+            "description": "",
+            "color": "#990000"
+        },
+        {
+            "id": "extra_ep1",
+            "date": "1998-08-15T00:00:00.000Z",
+            "title": "additional shooting begins",
+            "description": "",
+            "color": "#990000"
+        },
+        {
+            "id": "editing_end_ep1",
+            "date": "1999-03-15T00:00:00.000Z",
+            "title": "final mix is completed",
+            "description": "",
+            "color": "#990000"
+        },
+        {
+            "id": "ep1_release",
+            "date": "1999-05-19T00:00:00.000Z",
+            "title": "The Phantom Menace premieres",
+            "description": "",
+            "color": "#990000"
+        }
+    ]
+}
