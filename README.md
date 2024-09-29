@@ -6,7 +6,7 @@ Events have the following properties:
 
 * ID
 * title
-* description (not used currently)
+* description ~~(not used currently)~~
 * date
 * colour
 
@@ -14,4 +14,4 @@ Events have the following properties:
 
 * improved display (avoid overlap)
 * multiple lanes / channels for events
-* timespans (from/to/title) e.g. "Easter holidays" or "vacation"
+* ~~timespans (from/to/title) e.g. "Easter holidays" or "vacation"~~ (rudimentarily implemented September 2024)
