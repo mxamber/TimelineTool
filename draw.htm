@@ -15,13 +15,15 @@
 	<p id="viewControls">
 		Start year: <input type="number" onchange="timeline.offset = this.valueAsNumber; draw();" value=2000 step=1 id="startYear" />
 		End year: <input type="number" onchange="timeline.end = this.valueAsNumber; draw();" value=2020 step=1 id="endYear" />
-		Zoom factor: <input type="range" oninput="draw();" min=0.1 max=5 value=1 id="zoomFactor" step=0.05 />&nbsp;<span id="zoomLabel"></span>
+		Zoom factor: <input type="range" oninput="draw();" min=0.25 max=10 value=1 id="zoomFactor" step=0.25 />&nbsp;<span id="zoomLabel"></span>
 		<span class="spacer1"/>
-		<button onclick="newEvent()" id="buttonAdd">&nbsp;+&nbsp;</button>
+		<button onclick="newEvent()" class="buttonAdd">&nbsp;+&nbsp;Event</button>
+		<button onclick="newTimespan()" class="buttonAdd">&nbsp;+&nbsp;Timespan</button>
+		<button onclick="deleteEvent()" class="buttonRemove">&nbsp;X Item&nbsp;</button>
+		<button onclick="elem('fileInput').click();" class="buttonImport">Import JSON</button>
+		<button onclick="exportEvents()" class="buttonExport">Export JSON</button>
 		<input type="file" accept=".txt,.json,text/plain,application/json" id="fileInput"></input>
-		<button onclick="deleteEvent()" id="buttonRemove">&nbsp;X&nbsp;</button>
-		<button onclick="elem('fileInput').click();" id="buttonImport">Import JSON</button>
-		<button onclick="exportEvents()" id="buttonExport">Export JSON</button>
+		<input type="text" placeholder="Timeline Title" id="timelineTitle"></input>
 	</p>
 
 	<canvas id="timeline" width=3000 height=500></canvas>
