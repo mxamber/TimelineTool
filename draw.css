@@ -9,7 +9,7 @@ input[type="range"] {
 	vertical-align: middle;
 }
 
-button {
+button, input[type="text"] {
 	padding: 0.4em;
 	border: 1px solid lightgray;
 }
@@ -32,17 +32,17 @@ button:hover {
 #fileInput {
 	display: none;
 }
-#buttonAdd {
+.buttonAdd {
 	background: lightgreen;
 }
-#buttonRemove {
+.buttonRemove {
 	background: red;
 	color: white;
 }
-#buttonImport {
+.buttonImport {
 	background: cyan;
 }
-#buttonExport {
+.buttonExport {
 	background: orange;
 }
 
