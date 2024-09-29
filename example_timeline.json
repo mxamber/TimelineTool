@@ -13,7 +13,7 @@
             "id": "writing_begin_ep1",
             "date": "1994-11-01T00:00:00.000Z",
             "title": "Lucas begins writing the prequel trilogy",
-            "description": "",
+            "description": "Who knew it would be so divisive?",
             "color": "#990000"
         },
         {
@@ -58,5 +58,26 @@
             "description": "",
             "color": "#990000"
         }
-    ]
+    ],
+    "timespans": [
+        {
+            "id": "pre_prod",
+            "start_date": "1994-11-01T00:00:00.000Z",
+            "end_date": "1997-06-26T00:00:00.000Z",
+            "title": "Pre-production",
+            "description": "",
+            "color": "#4444bb",
+            "layer": 0
+        },
+        {
+            "id": "prod",
+            "start_date": "1997-06-26T00:00:00.000Z",
+            "end_date": "1999-03-15T00:00:00.000Z",
+            "title": "Production",
+            "description": "",
+            "color": "#dd2222",
+            "layer": 0
+        }
+    ],
+    "title": "Example Timeline"
 }
